@@ -1,4 +1,4 @@
-export default class Game {
+class Game {
   constructor() {
     this.phase = "setup"
   }
@@ -6,7 +6,6 @@ export default class Game {
   switchToBattle() {
     this.phase = "battle"
   }
-
 
   placeShips(ship, gameboard) {
     for (let i = 0; i < ship.spot.length; i++) {

@@ -8,11 +8,20 @@
 </head>
 
 <body>
-  <h1>Battle Ships</h1>
-  <div class="main-container">
-    <div class="player-grid"></div>
-    <div class="enemy-grid"></div>
+  <h1>Battleship</h1>
+  <div id="ship-container">
+    <div class="ship" data-length="5" draggable="true">Carrier (5)</div>
+    <div class="ship" data-length="4" draggable="true">Battleship (4)</div>
+    <div class="ship" data-length="3" draggable="true">Destroyer (3)</div>
+    <div class="ship" data-length="3" draggable="true">Submarine (3)</div>
+    <div class="ship" data-length="2" draggable="true">Patrol Boat (2)</div>
   </div>
+  <div class="board-container">
+    <div id="player-board" class="board"></div>
+    <div id="enemy-board" class="board"></div>
+  </div>
+  <p id="status">Drag ships to place them on your board!</p>
+  <button id="start-game">Start Game</button>
 </body>
 
 </html>
